@@ -37,8 +37,13 @@ describe("binsearch", () => {
   ].forEach((solution) => {
      const [needle, list, index] = solution;
      it(`should find ${needle} in ${list} at ${index}`, function () {      
-       binsearch(needle, list).should.eql(index);
+       binsearch.binsearch(needle, list).should.eql(index);
      });
+
+     it(`should find ${needle} in ${list} at ${index} (recursive)`, function () {      
+       binsearch.binsearchRec(needle, list).should.eql(index);
+     });
+
   });
   [
     [1, [2], -0],
@@ -51,7 +56,11 @@ describe("binsearch", () => {
   ].forEach((solution) => {
      const [needle, list, index] = solution;
      it(`should not find ${needle} in ${list} (${index})`, function () {      
-       binsearch(needle, list).should.eql(index);
+       binsearch.binsearch(needle, list).should.eql(index);
+     });
+
+     it(`should not find ${needle} in ${list} (${index}) (recursive)`, function () {      
+       binsearch.binsearchRec(needle, list).should.eql(index);
      });
   });
 });
