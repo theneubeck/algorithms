@@ -55,11 +55,11 @@ describe("binsearch", () => {
     [2, [1, 2, 3, 4, 5, 6, 7, 8, 9], 1],
   ].forEach((solution) => {
     const [needle, list, index] = solution;
-    it(`should find ${needle} in ${list} at ${index}`, () => {
+    it(`should find ${needle} in [${list}] at ${index}`, () => {
       binsearch.binsearch(needle, list).should.eql(index);
     });
 
-    it(`should find ${needle} in ${list} at ${index} (recursive)`, () => {
+    it(`should find ${needle} in [${list}] at ${index} (recursive)`, () => {
       binsearch.binsearchRec(needle, list).should.eql(index);
     });
 
@@ -74,11 +74,11 @@ describe("binsearch", () => {
     [2, [1, 3, 4, 5, 6, 7, 8, 9], -1],
   ].forEach((solution) => {
     const [needle, list, index] = solution;
-    it(`should not find ${needle} in ${list} (${index})`, () => {
+    it(`should not find ${needle} in [${list}] (${index})`, () => {
       binsearch.binsearch(needle, list).should.eql(index);
     });
 
-    it(`should not find ${needle} in ${list} (${index}) (recursive)`, () => {
+    it(`should not find ${needle} in [${list}] (${index}) (recursive)`, () => {
       binsearch.binsearchRec(needle, list).should.eql(index);
     });
   });
