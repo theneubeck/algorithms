@@ -9,4 +9,4 @@ This repo is a playground for writing those algo's you're supposed to know :)
 
 ## Run
 
-`npx mocha tests`
+`npx mocha tests/**`
