@@ -1,7 +1,7 @@
 "use strict";
 
 function add(one, two) {
-  return function() {
+  return function () {
     if (typeof one === "function") {
       return add(one(), two).apply(add);
     }
@@ -19,9 +19,9 @@ function inspect(fn) {
 }
 
 function curriedAdd(one) {
-  return function(two) {
+  return function (two) {
     return one + two;
-  }
+  };
 }
 
 function adder(arg) {
@@ -32,9 +32,9 @@ function adder(arg) {
 }
 
 function apply(fn, arg) {
-  return function() {
+  return function () {
     return fn(arg);
-  }
+  };
 }
 
 // inspect(add.bind(null, 3)(10));

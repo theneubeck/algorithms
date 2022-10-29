@@ -2,7 +2,7 @@
 require("should");
 
 const bubblesort = require("../lib/bubblesort");
-const _ = require("lodash")
+const _ = require("lodash");
 
 describe("bubblesort", () => {
 

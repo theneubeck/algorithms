@@ -1,8 +1,8 @@
 "use strict";
 require("should");
 
-var range = require("../lib/range");
-var _ = require("lodash");
+const range = require("../lib/range");
+const _ = require("lodash");
 
 describe("range", () => {
 
@@ -13,7 +13,7 @@ describe("range", () => {
     [5],
   ].forEach((args) => {
     const expected = _.range(...args);
-    it(`should generate ${args} to ${expected}`, function() {
+    it(`should generate ${args} to ${expected}`, () => {
       range(...args).should.eql(expected);
     });
   });

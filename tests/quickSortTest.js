@@ -2,7 +2,7 @@
 require("should");
 
 const quicksort = require("../lib/quicksort");
-const _ = require("lodash")
+const _ = require("lodash");
 
 describe("quicksort", () => {
 

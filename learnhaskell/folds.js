@@ -4,7 +4,7 @@
 function foldlForEach(array, folder, startValue) {
   let lastVal = startValue;
   array.forEach((elem) => {
-     lastVal = folder(lastVal, elem);
+    lastVal = folder(lastVal, elem);
   });
   return lastVal;
 }
@@ -34,4 +34,4 @@ module.exports = {
   foldlForEach,
   foldr,
   foldrForEach
-}
+};

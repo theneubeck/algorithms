@@ -1,8 +1,8 @@
 "use strict";
 require("should");
 
-var repeat = require("../lib/repeat");
-var _ = require("lodash");
+const repeat = require("../lib/repeat");
+const _ = require("lodash");
 
 describe("repeat", () => {
 
@@ -14,7 +14,7 @@ describe("repeat", () => {
     7,
   ].forEach((num) => {
     const expected = _.repeat(num, num).split("");
-    it(`should generate range(${num},${num}) to ${expected}`, function() {
+    it(`should generate range(${num},${num}) to ${expected}`, () => {
       repeat(num, num).should.eql(expected);
     });
   });

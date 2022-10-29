@@ -4,7 +4,7 @@ require("should");
 const adder = require("../learnhaskell/adder");
 const apply = require("../learnhaskell/apply");
 
-describe("Curried adder", function() {
+describe("Curried adder", () => {
   it("should add a number", () => {
     adder(1)().should.eql(1);
   });
@@ -22,7 +22,7 @@ describe("Curried adder", function() {
   });
 });
 
-describe("Apply an adder", function() {
+describe("Apply an adder", () => {
   it("should add a number", () => {
     apply(adder, 1).should.eql(1);
   });
