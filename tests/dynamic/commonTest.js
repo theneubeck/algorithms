@@ -27,5 +27,4 @@ describe("longest common substring", () => {
       commonSubstringPreCalc(word1, word2).should.eql(output);
     });
   });
-
 });
