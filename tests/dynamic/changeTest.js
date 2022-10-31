@@ -75,7 +75,7 @@ describe("calculating numberOfCoins", () => {
     ].forEach((pair) => {
       const [input, output] = pair;
       it(`should calculate changeWithMemory(${input}) to ${output}`, () => {
-          changeWithMemory(input).should.eql(output);
+        changeWithMemory(input).should.eql(output);
       });
 
       it(`should calculate changePreCalc(${input}) to ${output}`, () => {

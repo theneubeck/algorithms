@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 "use strict";
 
 function add(one, two) {
