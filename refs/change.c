@@ -45,9 +45,9 @@ main(int argn, char** args) {
   int coins[] = {1000, 500, 100, 50, 20, 10, 5, 1};
   int noOfCoins = 8;
 
-  int examples[] = {22, 13, 2, 4, 27, 46, 9, 8, 13};
+  int examples[] = {222, 130, 21, 400, 272, 4611, 99, 8888, 1300};
 
-  for (int e = 0; e <= sizeof(examples); e++) {
+  for (int e = 0; e < sizeof(examples)/sizeof(examples[0]); e++) {
 
   // printf("Det krävs %d mynt.\n", change(coins, noOfCoins, atoi(args[1])));
   // int totalAmount = atoi(args[1]);
