@@ -68,6 +68,20 @@ describe("Swamp traveling", () => {
   });
 
 
+  it("should conflicting paths in matrix", () => {
+    const matrix = [
+      [1, 1, 3, 4],
+      [2, 5, 5, 3],
+      [1, 3, 1, 4],
+      [4, 4, 4, 4]
+    ];
+    mud(matrix).should.eql({
+      result: 8,
+      path: [[0, 0], [1, 0], [2, 0], [3, 1]]
+    });
+  });
+
+
   describe("Swamp traveling with starting point", () => {
 
     it("should handle single matrix", () => {
